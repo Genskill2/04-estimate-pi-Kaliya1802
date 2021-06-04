@@ -39,5 +39,24 @@ int main(void) {
   }
 }
 
-
+float mc_pi(int n)
+{
+    int cir=0;
+    int res=0;
+    float xnice,ynice,dist;
+    for(int i=1;i<=n;i++)
+    {
+        xnice=frandom();
+        ynice=frandom();
+        dist=sqrt((xnice*xnice) + (ynice*ynice));
+        if(dist<=1)
+        {
+            cir++;
+            
+        }
+        res++;
+    }
+    float pi=(4*cir)/ (float)res;
+    return pi;
+}
 
