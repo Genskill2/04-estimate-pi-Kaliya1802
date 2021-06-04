@@ -24,7 +24,7 @@ int main(void) {
   }
 }
 
-float wallis_pi(int n)
+float wallis_pi(float n)
 { 
     float result=1;
     for (float i=1;i<=n;i++)
